@@ -1,0 +1,159 @@
+* {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#06beb6, #48b1bf);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welcome{
+  width: 100%;
+  height: 10vh;
+}
+
+.quiz-Container {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.topic-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.topics {
+   border: 3px solid white;
+   width: 90%;
+   height: 100px;
+   margin: 40px 0 0 0;
+}
+
+.quiz-game {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+.answers {
+ height: 80vh;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+.answer {
+  border: 3px solid white;
+  width: 90%;
+  height: 100px;
+  margin: 40px 0 0 0;
+}
+
+/*after final answer has been made */
+.d-none {
+  display: none;
+}
+
+button {
+  width: 100px;
+  border: white 3px solid;
+  background-color: #06beb6;
+}
+
+/*loader */
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .topics,.answer {
+    width: 50%;
+    height: 85px;
+    border-radius: 5px;
+  }
+  
+  .topics:hover, .answer:hover {
+    background-color: #198896;
+    cursor: pointer;
+  }
+
+  button:hover {
+      background-color: #198896;
+      cursor: pointer;
+    }
+  
+ 
+}
